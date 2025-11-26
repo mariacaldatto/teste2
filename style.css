@@ -1,0 +1,82 @@
+/* Definições Globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Fundo Suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #007bff; /* Azul vibrante para o cabeçalho */
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+/* Estilização da Lista de Pedidos */
+#lista-pedidos {
+    list-style: none; /* Remove os marcadores de lista padrão */
+    padding: 0;
+    width: 80%; /* Define uma largura */
+    max-width: 800px; /* Limita o tamanho */
+    margin: 0 auto; /* Centraliza a lista na tela */
+}
+
+/* Estilização de cada item da lista (Pedido) */
+.pedido {
+    display: flex; /* Organiza os elementos internos em linha */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    align-items: center;
+    background-color: white;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-size: 1.1em;
+}
+
+/* Estilos para os componentes do pedido */
+.numero-pedido {
+    font-weight: bold;
+    color: #007bff;
+    flex: 0 0 15%; /* Ocupa 15% do espaço, não cresce nem diminui */
+    text-align: left;
+}
+
+.descricao-item {
+    flex: 1; /* Ocupa o espaço restante */
+    text-align: left;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white; /* Texto branco para o status */
+    flex: 0 0 15%;
+    text-align: center;
+}
+
+/* Cores por Status (Requisito: Vermelho/Verde) */
+
+/* Pedido Pendente (Vermelho) */
+.pendente .status {
+    background-color: #dc3545; /* Vermelho forte */
+}
+
+/* Pedido Pronto (Verde) */
+.pronto .status {
+    background-color: #28a745; /* Verde forte */
+}
